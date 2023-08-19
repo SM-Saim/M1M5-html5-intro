@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./audio.html">Audio</a></li>
+          <li><a href="./form.html">Form</a></li>
+          <li>
+            <a href="./table.html">Home</a>
+            <ul class="form">
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./audio.html">Audio</a></li>
+              <li><a href="./form.html">Form</a></li>
+              <li><a href="./table.html">Home</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="">
+        <h1>This is a form</h1>
+        <label for="name"
+          >Enter Full Name:
+          <input type="text" placeholder="Enter Full Name" name="" id="name" />
+        </label>
+
+        <label for="email"
+          >Enter Your Email:
+          <input
+            type="email"
+            placeholder="Enter Your Email"
+            name=""
+            id="email"
+          />
+        </label>
+        <label for="phone"
+          >Enter Your Phone:
+          <input
+            type="number"
+            placeholder="Enter Your Phone"
+            name=""
+            id="phone"
+          />
+        </label>
+        <fieldset>
+          <legend>Please Select an Option</legend>
+          <label for="ML">
+            <input type="radio" name="course" id="ML" />ML
+          </label>
+          <label for="AI">
+            <input type="radio" name="course" id="AI" />AI
+          </label>
+          <label for="DS">
+            <input type="radio" name="course" id="ML" />DS
+          </label>
+          <label for="NETWORK">
+            <input type="radio" name="course" id="NETWORK" />NETWORK</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Please One or More Option</legend>
+          <label for="Burger">
+            <input type="checkbox" name="" id="Burger" />ML
+          </label>
+          <label for="Pastre">
+            <input type="checkbox" name="" id="Pastre" />Pastre
+          </label>
+          <label for="Tea">
+            <input type="checkbox" name="" id="Tea" />Tea
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Write Quaries</legend>
+          <textarea name="" id="" cols="20" rows="5"></textarea>
+        </fieldset>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
